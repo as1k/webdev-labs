@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Telegram Web</title>
-	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="img/icon.png">
 </head>
 <body>
-	<div class = "head"></div>
-	<div class = "regform">
-		<div class="rheader">
-			<a href=""><span class="link">Telegram</span></a>
-			<a href=""><span class="next">Next ></span></a>
-		</div>
-		<div class="rfooter">
-			<div class="welcome">
-				<span class = "sign"><strong>Sign in</strong></span><br><br>
-				<span class = "please">Please choose your country and enter your full phone number.</span>
+	<div class="login_page">
+		<div class="blue_rectangle"></div>
+		<div class="center">
+			<div class="top_login">
+				<div class="next_button"><a class="tuda" href="#">Next &nbsp; <img src="img/arrow.png" alt="arrow" width="7px" height="11px"style="vertical-align: middle;"></a></div>
+				<div class="logo">
+					<a class="telega_ref" href="https://telegram.org/" target="_blank"><img class="tgicon"src="img/icon.png" alt="Telegram Logo" width="30"><img class="tgword"src="img/Telegram.svg" alt="Telegram" width="62px" height="14px">
+					</a>
+				</div>
 			</div>
-			<div class="inputs">
-				<label for="country">Country</label><br>
-				<select name="country" id="country">
-					<option value="Kazakhstan">Kazakhstan</option>
-					<option value="Russia">Russia</option>
-				</select><br><br>
-				<label for="code">Code</label><br>
-				<input type="text" id ="code" value="+7 7">
-				<div class="numb">
-				<label for="number">Number</label><br>
-				<input type="text" id ="number">
-				</div>	
+			<div class="white_part">
+				<form name="send_form_code" class="form">
+					<h3 class="login_form1" my-i18n="login_sign_in">Sign in</h3>
+					<p class="login_form2">Please choose your country and enter your full phone number.</p>
+					<div class="input_country">
+						<label for="countrylbl" style="color: #999;">Country</label>
+						<br>
+						<select name="country" id="country">
+							<option value="Kazakhstan">Kazakhstan</option>
+							<option value="Russia">Russia</option>
+						</select>
+					</div>
+					<div class="input_num1">
+						<br>
+						<label for="code" style="font-size: 13px; color: #999;">Code</label>
+						<label for="number" style="font-size: 13px; color: #999; margin-left: 46px">Phone number</label><br>
+						<br>
+						<input type="text" id="code" value="+7 7">
+					</div>
+					<div class="input_num2" >
+						<input type="text" id="number">
+					</div>
+        	</div>
+				</form>
 			</div>
 		</div>
 	</div>
-	<div class = "foot"></div>
+	<footer>
+		<div class="about">
+			<p my-i18n="login_about_intro">Welcome to the official Telegram web-client.</p>
+			<a class="learn_more" href="#" style="text-decoration: none; color: #84a2bc;" target="_blank"><strong>Learn more</strong></a>
+		</div>
+	</footer>
 </body>
 </html>

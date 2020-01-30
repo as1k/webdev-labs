@@ -1,87 +1,119 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap');
-* {
-	padding: 0px;
-	margin: 0px;
+body{
+	margin: 0;
+	padding: 0;
+	font: 13px/18px Tahoma,sans-serif,Arial,Helvetica;
+	color: black;
+	background-color: #e7ebf0;
+	box-sizing: border-box;
+}
+.login_page{
+	box-sizing: border-box;
+}
+.blue_rectangle{
+	background-color: rgb(86, 130, 163);
+	height: 226px;
+}
+
+.center{
+	margin: -131px auto 90px;
+    width: 404px;
+    height: 413px;
+    background-color: white;
+    box-shadow: 0px 0px 1px grey;
+    border-radius: 4px 4px 4px 4px;
+
+	transition: 0.2s;
+}
+.white_part{
+	padding: 44px 65px;
+	margin: 0;
+}
+.top_login{
+	height: 75px;
+	background-color: rgb(86, 130, 163);
+}
+.next_button{
+	float: right;
+	font-weight: 700;
+	margin: 27px 15px 28px;
+	width: 80;
+	height: 75;
+}
+.tuda{
 	text-decoration: none;
-	font-family: 'Titillium Web', sans-serif;
-}
-
-.head {
-	width: 100%;
-	height: 250px;
-	background-color: #336699;
-}
-
-.foot {
-	width: 100%;
-	height: 500px;
-	background-color: #e6e6e6;
-}
-
-.regform {
-	position: absolute;
-	left: 550px;
-	top: 160px;
-}
-
-.rfooter {
-	width: 350px;
-	height: 300px; 
-	background-color: white;
-	box-shadow: 0px 0px 1px grey;
-	border-radius: 3px 3px 3px 3px;
-	padding-top: 50px;
-	padding-left: 50px; 
-}
-
-.rheader {
-	height: 30px;
-	text-align:left;
-}
-.link {
-	padding: 30px;
 	color: white;
 }
-.next {
-	float: right;
+.logo{
+	padding: 23px 15px 22px;
+	width: 140;
+	height: 75;
+	float: left
+}
+
+.telega_ref{
+	text-decoration: none;
 	color: white;
-	font-weight: bold;
-}
-.sign {
-	font-size: 20px;
-}
-.please {
-	font-size: 14px;
-	color: lightgrey;
-}
-.welcome {
-	height: 130px;
-}
-#code {
-	width:30px;
-	border: none;
-	border-bottom: 1px solid grey;
+	float: left;
+	box-sizing: border-box;
 }
 
-#code:hover {
-	border-bottom: 2px solid grey;
+.tgicon{
+	vertical-align: middle;
+	margin-right: 18px;
 }
-.numb {
-	padding-right: 70px;
-	float: right;
-	position: relative;
-	bottom: 25px;
-}
-
-#number {
-	border: none;
-	border-bottom: 1px solid grey;
-}
-#number:hover {
-	border-bottom: 2px solid grey;
+.tgword{
+	vertical-align: middle;
+	margin-top: 3px;
 }
 
-label {
+.login_form1{
+	color: black;
+    margin: 0 0 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.login_form2{
+	height: 50px;
+    padding: 0;
+    margin: 0 0 22px;
+    color: #999;
+}
+
+.input_country{
+	padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#country{
 	font-size: 13px;
-	color: grey;
+    padding: 3px 0;
+}
+#code{
+	float: left;
+    width: 50px;
+    margin-right: 25px;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 5px;
+}
+#code:hover{
+	border-bottom: 1px solid rgb(86, 130, 163);;
+}
+#number:hover{
+	border-bottom: 1px solid rgb(86, 130, 163);;
+}
+
+#number{
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 5px;
+}
+.about{
+	font-size: 13px;
+    margin-top: -65px;
+    text-align: center;
+    color: #84a2bc;
 }
