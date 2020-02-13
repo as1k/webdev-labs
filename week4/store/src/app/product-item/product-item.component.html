@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="column">
+      <h3>
+          {{ product.product.name }}
+      </h3>
+      <p>
+        {{ product.product.description }}
+      </p>
+      <img id="main" src={{product.product.image}}>
+      <h4> {{ product.product.price }} $ <span style="color: red;"> rating: {{ product.product.rating }} </span></h4>
+
+        <div class="gallery">
+          <img id="1" (mouseenter)="changeImage(1)" (mouseleave)="changeImage(1)" src={{product.product.image}}>
+          <img id="2" (mouseenter)="changeImage(2)" (mouseleave)="changeImage(2)" src={{product.product.image2}}>
+          <img id="3" (mouseenter)="changeImage(3)" (mouseleave)="changeImage(3)" src={{product.product.image3}}>
+        </div>
+    </div>
+  <div class="column">
+    <h4> Reminder: Attention! Buy 2 pairs of <br> boots and get another 1 as a gift!</h4>
+    <button (click)="Share()"> Go to Store </button>
+  </div>
+</div>
+

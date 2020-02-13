@@ -1,0 +1,25 @@
+.product-item {
+  text-align: center;
+  border: 1px solid #191970;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 0px 10px 20px 10px;
+}
+
+.products {
+  width: 66.55%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.zoom {
+  transition:transform .2s;
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
+.maxScale{
+   outline: none;
+   overflow: hidden;
+ }

@@ -1,0 +1,23 @@
+<h2 style="text-align:center; margin: 40px 0px;">Products</h2>
+<div class="products">
+  <div class="product-item maxScale"  *ngFor="let product of products">
+
+      <h3>
+        <a routerLink="/product-item/+{{product.id}}" [state]="{ product:product }" [title]="product.name + ' details'" >
+          {{ product.name }}
+        </a>
+      </h3>
+      <img class = "zoom" src={{product.image}}>
+      <br>
+      <h4> {{ product.price }} $ <span style="color: red;float:right;font-size: 10px;"> rating: {{ product.rating }} </span></h4>
+      <div style="display:flex;justify-content:space-between">
+        <button (click)="share(product)">
+          Share
+        </button>
+        <app-product-alerts
+          [product]="product"
+          (notify)="onNotify()">
+        </app-product-alerts>
+      </div>
+  </div>
+</div>
