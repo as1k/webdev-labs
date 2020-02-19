@@ -3,11 +3,11 @@
   <div class="product-item maxScale"  *ngFor="let product of products">
 
       <h3>
-        <a routerLink="/product-item/+{{product.id}}" [state]="{ product:product }" [title]="product.name + ' details'" >
+        <a routerLink="/product-id/{{product.id}}" [state]="{ product:product }" [title]="product.name + ' details'" >
           {{ product.name }}
         </a>
       </h3>
-      <img class = "zoom" src={{product.image}}>
+      <img class="zoom" src={{product.image}}>
       <br>
       <h4> {{ product.price }} $ <span style="color: red;float:right;font-size: 10px;"> rating: {{ product.rating }} </span></h4>
       <div style="display:flex;justify-content:space-between">
