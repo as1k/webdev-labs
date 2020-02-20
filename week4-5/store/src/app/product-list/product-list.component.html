@@ -3,7 +3,7 @@
   <div class="product-item maxScale"  *ngFor="let product of products">
 
       <h3>
-        <a routerLink="/product-id/{{product.id}}" [state]="{ product:product }" [title]="product.name + ' details'" >
+        <a routerLink="/category/{{product.category_id}}/product-id/{{product.id}}" [state]="{ product:product }" [title]="product.name + ' details'" >
           {{ product.name }}
         </a>
       </h3>

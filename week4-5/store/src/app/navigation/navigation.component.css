@@ -6,6 +6,7 @@
   background-color: white;
   overflow-x: hidden;
   padding-top: 20px;
+  text-align: center;
 }
 
 .sidenav a {
@@ -13,7 +14,7 @@
   text-decoration: none;
   color:#FF4747;
   font-size: 25px;
-  display: block;
+  display: inline-block;
 }
 
 .sidenav a:hover {

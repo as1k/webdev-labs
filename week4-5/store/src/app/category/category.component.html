@@ -1,12 +1,12 @@
-<h2 style="text-align: center">{{category.name}}<h2>
-<div>
-  <div clas="product-item" *ngFor="let product of products">
+<h2 style="text-align: center">{{category.name}}</h2>
+<div class="mainDiv">
+  <div class="product-item" *ngFor="let product of products">
     <h3>
       <a routerLink="/category/{{category.id}}/product-id/{{product.id}}" [state]="{ product:product }" [title]="product.name + ' details'" >
-        {{ product.name }}
-      </a>
+      {{ product.name }}
+    </a>
     </h3>
-    <img src="{{product.image}}"/>
+    <img src="{{product.image}}" id="myimg"/>
     <br>
     <h4>{{ product.price }} $ <span style="..."> rating: {{product.rating}} </span> </h4>
   </div>
