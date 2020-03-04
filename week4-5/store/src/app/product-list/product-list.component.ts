@@ -13,11 +13,10 @@ export class ProductListComponent{
     const url: string = window.location.href;
     window.alert(`The product ${ product.name } has been shared!`);
     window.open(`https://telegram.me/share/url?url=${ product.link }&text=Hey, check out this cool ${ product.name }`);
-
   }
 
-  onNotify() {
-    window.alert(`You will be notified when the item goes on sale`);
+  onNotify(product) {
+    window.alert(`You will be notified when ${product.name} goes on sale`);
   }
 }
 
