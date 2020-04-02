@@ -1,0 +1,8 @@
+<h2>My Heroes</h2>
+<ul class="films">
+  <li *ngFor="let film of films" >
+  <a routerLink="/films/{{film.id}}" (click)="this.incrViewCount(film.id)">
+    <span class="badge">{{film.id}}</span> {{film.title}}
+  </a>
+</li>
+</ul>
