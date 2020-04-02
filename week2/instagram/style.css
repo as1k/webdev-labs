@@ -1,0 +1,143 @@
+html{
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+.right-first {
+    width: 350px;
+    height: 550px;
+    background: #fff;
+    text-align: center;
+}
+
+.right-wrapper {
+    margin-top: 40px;
+    margin-right: 296px;
+    background: #fafafa;
+    width: 350px;
+    text-align: center;
+    height: 800px;
+    float:right;
+}
+
+.border {
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    display: inline-table;
+}
+
+.right-second {
+    width: 350px;
+    height: 52px;
+    padding-top: 15px;
+    background: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #262626;
+    text-align: center;
+}
+
+.right-third {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.left {
+    float: left;
+    margin-left: 288px;
+    margin-top: 112px;
+}
+
+body {
+    margin: 0px;
+    background: #fafafa;
+    font-family: sans-serif;
+}
+
+.registr{
+    color: #999;
+    font-weight: bold;
+    margin: 0 40px 10px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.insta-pic {
+    margin-top: 20px;
+}
+
+.box {
+    font-size: 12px;
+    opacity: 0.95;
+    padding: 9px 0 7px 8px;
+    border: 0;
+    width: 255px;
+    margin-top: 7px;
+    height: 20px;
+    background: #fafafa;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+
+}
+
+.text {
+    color: #999;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 19px;
+}
+
+.right-first a {
+    font-weight: bold;
+    color: #999;
+    text-decoration: none;
+}
+
+.facebooklink {
+    margin-top: 10px;
+}
+
+.button {
+    margin-top: 14px;
+    width: 267px;
+    height: 30px;
+    background: #3897f0;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+footer{
+    padding: 5rem 0;
+}
+footer .container{
+    justify-content: space-between;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11.4px;
+    font-family: Arial;
+    position: absolute;
+    margin-top: 850px;
+    margin-left: 130px;
+}
+
+.footer-nav ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.footer-nav ul li{
+    margin-right: 16px;
+}
+
+.footer-nav ul li a{
+    color: #003569;
+    text-decoration: none;
+}
+
+.copyright-notice{
+    color:#999999;
+    margin-left: 40px;
+    margin-bottom: 30px
+}
