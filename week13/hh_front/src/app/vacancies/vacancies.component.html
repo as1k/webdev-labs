@@ -1,0 +1,9 @@
+<h1 class="header">Vacancies</h1>
+<div *ngFor="let c of vacancies" class="item">
+  <a>{{ c.name }}</a>
+  {{c.description}}
+  {{c.salary}}
+</div>
+<button routerLink="">
+  Back
+</button>
